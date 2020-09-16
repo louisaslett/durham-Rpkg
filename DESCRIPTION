@@ -1,0 +1,11 @@
+Package: durham
+Type: Package
+Title: Durham University R Package
+Version: 2.0.0
+Author: Peter Craig and the Durham University Statistics and Probability group
+Maintainer: Louis Aslett <louis.aslett@durham.ac.uk>
+Description: Datasets and utility functions for student practicals run by the
+	     Department of Mathematical Sciences at Durham University.
+License: Please ask Peter Craig <p.s.craig@durham.ac.uk>
+Encoding: UTF-8
+LazyData: true

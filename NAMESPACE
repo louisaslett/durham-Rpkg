@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+
+importFrom("graphics", "axis", "boxplot", "plot.new", "plot.window", "points",
+           "text", "title")
+importFrom("stats", "model.tables", "resid")
