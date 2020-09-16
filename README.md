@@ -26,7 +26,7 @@ The easiest way to download the package to your own computer is by making use of
 
 ```r
 install.packages("remotes")
-remotes::install_github("louisaslett/durham_Rpkg")
+remotes::install_github("louisaslett/durham-Rpkg")
 ```
 
 ### Troubleshooting
