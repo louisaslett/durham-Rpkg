@@ -1,7 +1,7 @@
 Package: durham
 Type: Package
 Title: Durham University R Package
-Version: 2.0.0
+Version: 2.0.1
 Author: Peter Craig and the Durham University Statistics and Probability group
 Maintainer: Louis Aslett <louis.aslett@durham.ac.uk>
 Description: Datasets and utility functions for student practicals run by the
