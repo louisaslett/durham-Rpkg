@@ -31,18 +31,40 @@ remotes::install_github("louisaslett/durham-Rpkg")
 
 ### Troubleshooting
 
-If you encounter the error:
+1. If you encounter an error similar to:
 
-```
-Error in strptime(xx, f, tz = tz) : 
-  (converted from warning) unable to identify current timezone 'C':
-please set environment variable 'TZ'
-Error: Failed to install 'durham' from GitHub:
-  (converted from warning) installation of package
-```
+    ```
+    ERROR: failed to create lock directory
+    ```
 
-then please run the following command in R before attempting again:
+    then please try again with this slightly different install command:
 
-```r
-Sys.setenv(TZ='GMT')
-```
+    ```r
+    remotes::install_github("louisaslett/durham-Rpkg", INSTALL_opts = "--no-lock")
+    ```
+
+1. If you encounter the error:
+
+    ```
+    Error in strptime(xx, f, tz = tz) : 
+      (converted from warning) unable to identify current timezone 'C':
+    please set environment variable 'TZ'
+    Error: Failed to install 'durham' from GitHub:
+      (converted from warning) installation of package
+    ```
+
+    then please run the following command in R before attempting again:
+
+    ```r
+    Sys.setenv(TZ='GMT')
+    ```
+
+1. If you encounter the error:
+
+    ```
+    Downloading GitHub repo louisaslett/durham-Rpkg@HEAD
+    Error in utils::download.file(url, path, method = method, quiet = quiet,  : 
+      cannot open URL 'https://api.github.com/repos/louisaslett/durham-Rpkg/tarball/HEAD'
+    ```
+
+    then please disable your VPN and try again.
